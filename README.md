@@ -8,17 +8,17 @@ Noteful is a simple yet fully featured note taking application. It has been deve
 
 ## Home Page
 Noteful greets you with a list of all folders and notes available.
-![Home Page](screenshots/noteful-home-screen.jpg)
+![Home Page](screenshots/noteful-home-screen.jpg =250x)
 
 
 ## Folder Specific Notes
 Users have the option of selecting a specific folder to display only notes within that folder.
-![specific folder notes](screenshots/folder-selection.jpg)
+![specific folder notes](screenshots/folder-selection.jpg =250x)
 
 ## Add Notes and Folders
 Noteful provides users the ability to note only add notes, but also custom folders as well. 
-![add a note](screenshots/add-note.jpg)
-![add a folder](screenshots/add-folder.jpg)
+![add a note](screenshots/add-note.jpg =250x)
+![add a folder](screenshots/add-folder.jpg =250x)
 
 
 ## Technology Used
