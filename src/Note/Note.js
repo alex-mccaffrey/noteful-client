@@ -23,20 +23,18 @@ export default class Note extends React.Component {
           'Authorization': `Bearer ${config.API_KEY}`
       },
     })
-      .then(res => {
-        if (!res.ok)
-          return res.json().then(e => Promise.reject(e))
-        return res.json()
-      })
-      .then(() => {
-        this.context.deleteNote(noteId)
-        // allow parent to perform extra behaviour
-        this.props.onDeleteNote(noteId)
-      })
-      .catch(error => {
-        console.error({ error })
-      })
-  }
+    .then(res => {
+      if (!res.ok)
+        return res.json().then(e => Promise.reject(e))
+    })
+    .then(() => {
+      this.context.deleteNote(noteId)
+      this.props.onDeleteNote(noteId)
+    })
+    .catch(error => {
+      console.error({ error })
+    })
+}
 
   render() {
     const { name, id, modified } = this.props

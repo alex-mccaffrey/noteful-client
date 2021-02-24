@@ -33,7 +33,6 @@ class App extends Component {
           'Authorization': `Bearer ${config.API_KEY}`
         }
       })
-      //fetch(`${config.API_ENDPOINT}/folders`),
     ])
       .then(([notesRes, foldersRes]) => {
         if (!notesRes.ok) return notesRes.json().then((e) => Promise.reject(e));
